@@ -1,0 +1,19 @@
+section {
+    article {
+        display: flex;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0077b6;
+    & header picture {
+        flex-basis: 50%;
+    }
+    & header picture image {
+        max-width: 100px;
+    }
+
+}
