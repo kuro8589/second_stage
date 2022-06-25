@@ -7,6 +7,9 @@
   <meta name="description" content="Un sitio web fanpage sobre juegos de Tecmo y Koei">
   <meta name="keywords" content="Team Ninja, Tecmo, Koei, Nioh, Atelier, Fatal Frame, Ninja Gaiden">
   <link rel="stylesheet" href="./css/style.css">
+                   <!--FONT AWESOME-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"/>                 
   <title>Team Ninja | Home</title>
 </head>
 <body class="body__index">
@@ -38,42 +41,86 @@
   <main>
     <section>
       <p>  <!--LOREM-->
-        <b>
           Team Ninja fue formado por Tomonobu Itagaki a partir de un grupo de diseñadores de juegos que trabajan en Tecmo específicamente con el propósito de crear las versiones caseras del juego de lucha Dead or Alive y su secuela, Dead or Alive 2. En 2008, el juego de acción y aventura Ninja Gaiden II para Xbox 360 fue publicado por Microsoft Game Studios, convirtiéndolo en el primer juego creado por Team Ninja en no ser publicado por Tecmo; Tecmo Koei más tarde lanzó una versión mejorada de Ninja Gaiden II en PlayStation 3 como Ninja Gaiden Sigma 2.
-
-        </b>
        </p>
                       <!--IMAGENES-->
-      <div class="index__gallery">               
-       <picture>
-         <img src="Img/koeilogo.jpg" alt="">
-      </picture>
-       <picture>
-         <img src="Img/Team-ninja.jpg" alt="">
-      </picture>
-       <picture>
-         <img src="Img/Atelier-25th-Anniversary-Title.jpg" alt="">
-      </picture>
-    </div>
-    </section>
-    <section>
-      <p>
-        Registrate para recibir noticias
-      </p>
-      <form action="./index.js" method="get">
-        <label for="Nombre">Nombre:</label>
-        <input type="text" name="Nombre" required>
-        <input type="submit" value="Enviar" required>
-        <label for="Email">email:</label>
-        <input type="email" name="Email" required>
-        <input type="submit" value="Enviar" required>
+      <div class="card">
+        <div class="face front">
+             <img src="./Img/Nioh-Samurai1.jpg" alt="">
+             <h3>Nioh</h3>
+        </div>
+        <div class="face back">
+          <h3>Nioh</h1>
+          <p>Ambientada durante una versión ficticia del año 1600 en el Japon Feudal.</p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+             <img src="./Img/ninja-gaiden4.jpg" alt="">
+             <h3>Ninja Gaiden</h3>
+        </div>
+        <div class="face back">
+          <h3>Ninja Gaiden</h3>
+          <p>"Leyenda del Ninja de la espada del dragón" sigue las aventuras del ninja del Clan del Dragón, Ryu Hayabusa.</p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+             <img src="./Img/Wo_long.jpg" alt="">
+             <h3>Wo Long</h3>
+        </div>
+        <div class="face back">
+          <h3>Wo Long</h3>
+          <p>Basado en la novela histórica del siglo XIV de Luo Guanzhong Romance of the Three Kingdoms.</p>
+          <div class="link">
+            <a href="#">Details</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
                     <!--Comienza el Footer-->
   <footer>
-    <p>
-      Sígueme en mi etapa de Aprendizaje →</p>
-      <a href="https://github.com/kuro8589/first_project/">Github</a>
+     <div class="footer-container">
+      <div class="footer-content-container">
+        <h3 class="website-logo">Team Ninja</h3>
+        <span class="footer-info">maximedin27@gmail.com</span>
+      </div>
+        <div class="footer-menus">
+          <div class="footer-content-container">
+            <span class="menu-title"></span>
+            <a href="" class="menu-item-footer">Home</a>
+            <a href="" class="menu-item-footer">Games</a>
+            <a href="" class="menu-item-footer">About Us</a>
+            <a href="" class="menu-item-footer">Teams</a>
+            <a href="" class="menu-item-footer">Vintage</a>
+          </div>
+          <div class="footer-content-container">
+            <span class="menu-title"></span>
+            <a href="" class="menu-item-footer">Legal</a>
+            <a href="" class="menu-item-footer">Privacy Policy</a>
+            <a href="" class="menu-item-footer">Cookies</a>
+            <a href="" class="menu-item-footer">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="footer-content-container">
+          <span class="menu-title">Follow us</span>
+          <div class="social-container">
+            <a href="" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="social-link"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+     </div>
+      <div class="copyright-container">
+        <span class="copyright">&copy;2022, TeamNinja.com</span>
+      </div>
   </footer>
 </body>
 </html>
