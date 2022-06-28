@@ -1,0 +1,33 @@
+            /* HEADER */
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #121212;
+                & header picture {
+                    flex-basis: 50%;
+                }
+                & header picture image {
+                    max-width: 100px;
+                }
+            
+            }
+            
+                     /* BARRA NAVEGACION */
+            
+            nav ul {
+                display: flex;
+                flex-basis: 60%;
+                gap: 2.5rem;
+                & ul a {
+                    font-size: 1.8em;
+                }
+                & ul a:hover {
+                    transition-duration: .7s;
+                    background-color: #8338ec;
+                    border-radius: 8%;
+                    & ul {
+                        list-style-type: none;
+                    }
+                }
+            }

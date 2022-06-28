@@ -1,19 +1,23 @@
-section {
-    article {
-        display: flex;
-    }
-}
+/* EXTERNOS */
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #0077b6;
-    & header picture {
-        flex-basis: 50%;
-    }
-    & header picture image {
-        max-width: 100px;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,700;1,400&display=swap');
 
-}
+/* MISC */
+
+@import './misc/variable';
+@import './misc/mixins';
+@import './misc/normalize';
+@import './misc/animations';
+
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* PAGES */
+
+@import './pages/about-us';
+@import './pages/games';
+@import './pages/teams';
+@import './pages/vintage';

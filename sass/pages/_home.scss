@@ -1,0 +1,77 @@
+         /* HOME */
+.body__index {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    & .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    & .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+    }
+    & .front img {
+        @include sizes(300px, 200px);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &.front h3 {
+        position: absolute;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        bottom: 0;
+        background: rgba(0, 0, 0, .4);
+        text-align: center;
+        font-size: 18px;
+    }
+    & .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(235, 113, 240);
+        padding: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #000;
+    }
+    & .back .link {
+        border-top: solid 1px white;
+        height: 50px;
+        line-height: 50px;
+    }
+    & .back .link a {
+        color: white;
+    }
+    & .back h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    & .back p {
+        letter-spacing: 1px;   
+    }
+    &:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+    }
+    &:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+    }
+}

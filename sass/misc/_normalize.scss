@@ -1,0 +1,28 @@
+/* NORMALIZE */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(135deg, #C6FFDD, #FBD786, #f7797d);
+    animation: animado 10s infinite;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Cambay', sans-serif;
+    color: white;
+}
