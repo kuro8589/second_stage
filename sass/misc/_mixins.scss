@@ -5,3 +5,8 @@
     align-items: $align;
     gap: $gap;
 }
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}

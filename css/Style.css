@@ -415,6 +415,14 @@ footer p {
     color: #0c0f0a;
 }
 
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 /* ABOUT-US PAGE */
 article p {
     font-size: 1.8em;
@@ -428,11 +436,11 @@ article p {
 /* VINTAGE PAGE */
 
 .section__vintage {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(300px, auto);
+    display: Flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
-    grid-auto-flow: dense;
+    Justify-content: center;
 }
 
 section img {
